@@ -1,0 +1,13 @@
+version: 1
+name: sniffex
+description: packet sniffer on rumprun
+languagepack: rumprun
+source:
+  repository: http://github.com/shivaRamdeen/sniffex.git
+  revision: master
+workflow_config:
+  test_cmd: "echo hello test"
+  run_cmd: "echo hello run"
+trigger_actions:
+- build
+- deploy
