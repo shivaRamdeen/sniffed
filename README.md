@@ -12,3 +12,21 @@ TODO: show how unikernels are deployed without solum?!
 
 #Requirements
 Dependencies of this application are installed using app-get so requirements are listed in a space-delimited list.
+
+#Deplying sniffex using Solum
+
+-create lp
+
+solum lp create rumprun http://github.com/shivaRamdeen/rumprun_LP
+
+-wait for the lp to become ready
+
+solum lp show sniffex
+
+-create app
+
+solum app create --app-file sniffex.yaml --param-file params.yaml
+
+deploy app
+
+solum app deploy sniffex
