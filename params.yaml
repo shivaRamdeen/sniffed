@@ -2,3 +2,4 @@ user_params:
     kernel_type: rumprun
     cmdline: ""
     compiler_flags: -lpcap
+    file_to_compile: sniffex.c
